@@ -1,0 +1,12 @@
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: "3.11"
+build:
+  requirementsPath: requirements.txt
+run:
+  scriptName: app.py
+  command: python app.py
+  containerPort: 8080
+  persistenceMount: /data
